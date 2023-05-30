@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Site de Notícias</title>
+  <style>
+    .navbar {
+      background-color: #333;
+    }
+
+    .navbar-brand,
+    .navbar-nav a {
+      color: #fff;
+      padding: 10px;
+    }
+
+    .news-container {
+      margin-top: 20px;
+    }
+
+    .headline {
+      background-color: #f8f8f8;
+      padding: 18px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .headline img {
+      max-width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .headline h2 {
+      margin-bottom: 10px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .headline p {
+      margin-bottom: 10px;
+      color: #555;
+    }
+
+    .important-news,
+    .other-news {
+      background-color: #f8f8f8;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+
+    .important-news h3,
+    .other-news h3 {
+      margin-bottom: 10px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .news-container i {
+      color: #807b7b;
+      font-size: 18px;
+      margin-right: 5px;
+    }
+
+    .news-container .social-icons a {
+      margin-right: 10px;
+      color: #888;
+      font-size: 20px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+    }
+
+    footer h4 {
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    footer p {
+      color: white;
+    }
+
+    footer ul.list-unstyled li a {
+      color: white;
+    }
+
+    footer ul.social-icons li a {
+      color: white;
+      font-size: 20px;
+    }
+
+    .footer-bottom {
+      background-color: #222;
+      padding: 10px 0;
+      text-align: center;
+      color: #ccc;
+      font-size: 14px;
+    }
+    .news-container .headline:hover {
+  background-color: #f1f1f1;
+
+}
+
+.news-container .important-news:hover,
+.news-container .other-news:hover {
+  background-color: #f1f1f1;
+}
+
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Noticias</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="perfil.html">Sobre mim</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="albuns.html">Álbuns</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container news-container">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="headline">
+          <img src="img/exorcistadopapa_1.webp" alt="Headline Image" class="img-fluid">
+          <h2>Novo Filme de Suspense é Lançado</h2>
+          <p>Confira o mais recente lançamento cinematográfico que promete deixar o público vidrado na tela.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-6">
+        <div class="important-news">
+          <h3>Notícia Importante</h3>
+          <p>Fala do presidente brasileiro nesta segunda ao lado de Maduro gerou repercussão negativa junto ao presidente do Uruguai, Luís Lacalle Pou.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-6">
+        <div class="important-news">
+          <h3>Notícia Importante</h3>
+          <p>Licitação para a construção da rua com 10 curvas sinuosas em São Joaquim será lançada na quinta-feira. Município prevê entrada no Guiness Book.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-6">
+        <div class="other-news">
+          <h3>Notícia</h3>
+          <p>Câmara vota no plenário proposta que prevê demarcação apenas de terras já ocupadas por indígenas até promulgação da Constituição de 1988. STF também discute tema, que divide ruralistas e indígenas.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-6">
+        <div class="other-news">
+          <h3>Notícia</h3>
+          <p>PF já acompanhava movimentação de avião de igreja flagrado com 290 kg de droga no Pará</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-6">
+        <div class="other-news">
+          <h3>Notícia</h3>
+          <p>Criador do ChatGPT e especialistas alertam para 'risco de extinção"</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Sobre Nós</h4>
+          <p>Sou um programador iniciante que vem evoluindo muito de uns tempos atras até hoje.</p>
+        </div>
+        <div class="col-md-3">
+          <h4>Links Rápidos</h4>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="perfil.html">Sobre mim</a></li>
+            <li><a href="albuns.html">Álbuns</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4>Redes Sociais</h4>
+          <ul class="list-unstyled social-icons">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="text-center">
+            <p class="mb-0">&copy; 2023 Seu Site de Notícias. Todos os direitos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
