@@ -70,6 +70,123 @@
       padding: 10px;
       margin-bottom: 20px;
     }
+    .navbar {
+      background-color: #333;
+    }
+
+    .navbar-brand,
+    .navbar-nav a {
+      color: #fff;
+      padding:5px;
+      top:10px;
+      position:relative;
+    }
+
+    .news-container {
+      margin-top: 20px;
+    }
+
+    .headline {
+      background-color: #f8f8f8;
+      padding: 18px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .headline img {
+      max-width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .headline h2 {
+      margin-bottom: 10px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .headline p {
+      margin-bottom: 10px;
+      color: #555;
+    }
+
+    .important-news,
+    .other-news {
+      background-color: #f8f8f8;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+
+    .important-news h3,
+    .other-news h3 {
+      margin-bottom: 10px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .news-container i {
+      color: #807b7b;
+      font-size: 18px;
+      margin-right: 5px;
+    }
+
+    .news-container .social-icons a {
+      margin-right: 10px;
+      color: #888;
+      font-size: 20px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+    }
+
+    .navbar{
+      padding:-100px;
+      position:relative;
+      top:-30px;
+    }
+
+    footer h4 {
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    footer p {
+      color: white;
+    }
+
+    footer ul.list-unstyled li a {
+      color: white;
+    }
+
+    footer ul.social-icons li a {
+      color: white;
+      font-size: 20px;
+    }
+
+    .footer-bottom {
+      background-color: #222;
+      padding: 10px 0;
+      text-align: center;
+      color: #ccc;
+      font-size: 14px;
+    }
+    .news-container .headline:hover {
+  background-color: #f1f1f1;
+
+}
+
+.news-container .important-news:hover,
+.news-container .other-news:hover {
+  background-color: #f1f1f1;
+}
+
   </style>
   <script>
     document.addEventListener("DOMContentLoaded", function() {
@@ -86,6 +203,28 @@
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Noticias</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="perfil.html">Sobre mim</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="albuns.html">Álbuns</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <div class="container">
     <h1>Entre em Contato</h1>
 
